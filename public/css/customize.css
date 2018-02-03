@@ -1,0 +1,77 @@
+.paginations{
+    text-align: center;
+}
+.pagination{
+    display: inline-block;
+}
+.pagination li{
+    display: inline-block;
+    margin-right: 0px;
+    border: 1px solid #bbb;
+}
+.pagination li span, .pagination li a{
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    border: 0;
+    /*background: #409e03;*/
+    /*border-color: #409e03;*/
+    /*border-radius: 50%;*/
+    padding: .5rem .75rem;
+    /*width: 30px;
+    height: 30px;*/
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /*margin-right: 5px;*/
+}
+/*.pagination li a{
+    border-color: #409e03;
+}*/
+.pagination li.active span, .pagination li a:hover{
+    background: #000 !important;
+    color: #fff !important;
+    /*font-size: 17px;*/
+}
+.pagination li.disabled span{
+    color: #000;
+}
+.pagination li:last-child a{
+    color: #000 !important;
+    /*font-size: 22px;*/
+    font-weight: normal;
+}
+.pagination li:last-child a:hover, .pagination li:first-child a:hover{
+    background: none !important;
+    color: #000 !important;
+}
+
+.map_container {
+    position:relative;
+    padding-bottom:35%;
+    padding-top:25px;
+    height:0;
+    max-width:100%;
+    margin:0 auto;
+}
+.map_container iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+.vdetail iframe{
+    width: 90%;
+    height: 540px;
+}
+.mota-tin{
+    overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 3; /*số dòng muốn hiện */
+   font-size: 14px;          /*cỡ chữ, đơn vị px */
+   line-height: 1,2em;        /* khoảng cách giữa các dòng, đơn vị em*/
+   max-height: 45px;
+}
